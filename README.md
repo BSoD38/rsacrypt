@@ -1,5 +1,5 @@
 # rsacrypt
-An RSA encryption and decryption implementation in Node.js made for school
+An RSA encryption and decryption implementation in Node.js made for a school project
 
 # How to setup
 You need Node.js and npm to use this. This was tested using Node.js 16.4.0.
