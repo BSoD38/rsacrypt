@@ -31,7 +31,7 @@ switch (args[0]) {
         if (args.indexOf("-f") !== -1 && args[args.indexOf("-f") + 1]) {
             fileName = parseFilename(args[2]);
         }
-        let keySize = 64;
+        let keySize = 32;
         if (args.indexOf("-s") !== -1 && args[args.indexOf("-s") + 1]) {
             keySize = parseInt(args[args.indexOf("-s") + 1]);
         }
@@ -86,7 +86,7 @@ function parseFilename(name) {
 function help() {
     console.log("Usage: node rsacrypt.js [command] [...options]");
     console.log("Available [command] are:");
-    console.log("- keygen [...options]: Generates a key. Use option -f [filename] to specify a custom key file name. Use -s [size] to specify a key size (64 by default).");
+    console.log("- keygen [...options]: Generates a key. Use option -f [filename] to specify a custom key file name. Use -s [size] to specify a key size (32 by default).");
     console.log("- crypt [key] [message] [...options]: Encrypts a message with the given key file. Use option -i to use a file as input. Use option -o to output encrypted data into a file.");
     console.log("- decrypt [key] [message] [...options]: Decrypts a message with the given key file. Use option -i to use a file as input. Use option -o to output the decrypted data into a file.");
     console.log("- help or -h: Shows this help screen.");
